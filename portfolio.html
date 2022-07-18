@@ -23,37 +23,41 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <nav class="site-nav">
-        <a href="/" class="link site-logo"><span class="accent-logo">Web</span>Studio</a>
-        <ul class="list">
-          <li class="nav-item"><a href="./index.html" class="link nav-link">Студия</a></li>
-          <li class="nav-item">
-            <a href="./portfolio.html" class="link nav-link nav-link-current">Портфолио</a>
+      <div class="container header-container">
+        <nav class="site-nav">
+          <a href="/" class="link site-logo"><span class="accent-logo">Web</span>Studio</a>
+          <ul class="list">
+            <li class="nav-item"><a href="./index.html" class="link nav-link">Студия</a></li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link nav-link nav-link-current">Портфолио</a>
+            </li>
+            <li class="nav-item"><a href="#" class="link nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="list header-address-list">
+          <li class="header-address-item">
+            <a href="mailto:info@devstudio.com" class="link header-address">info@devstudio.com</a>
           </li>
-          <li class="nav-item"><a href="#" class="link nav-link">Контакты</a></li>
+          <li class="header-address-item">
+            <a href="tel:+380961111111" class="link header-address">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link header-address">info@devstudio.com</a>
-        </li>
-        <li><a href="tel:+380961111111" class="link header-address">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
 
     <!-- Main -->
     <main>
       <!-- Our projects -->
-      <section class="section our-projects">
+      <section class="section our-projects container">
         <h1 class="visually-hidden">Наши проекты</h1>
 
         <!-- Button list -->
-        <ul class="button-list">
-          <li class="list"><button type="button" class="button button-item">Все</button></li>
-          <li class="list"><button type="button" class="button button-item">Веб-сайты</button></li>
-          <li class="list"><button type="button" class="button button-item">Приложения</button></li>
-          <li class="list"><button type="button" class="button button-item">Дизайн</button></li>
-          <li class="list"><button type="button" class="button button-item">Маркетинг</button></li>
+        <ul class="list button-list">
+          <li class="item"><button type="button" class="button button-item">Все</button></li>
+          <li class="item"><button type="button" class="button button-item">Веб-сайты</button></li>
+          <li class="item"><button type="button" class="button button-item">Приложения</button></li>
+          <li class="item"><button type="button" class="button button-item">Дизайн</button></li>
+          <li class="item"><button type="button" class="button button-item">Маркетинг</button></li>
         </ul>
 
         <!-- Projects list -->
@@ -61,9 +65,11 @@
           <li class="list projects-item">
             <a href="/" class="link">
               <img src="./images/projects/web-site.jpg" alt="ноутбук" width="370" />
-              <h2 class="projects-title">Технокряк</h2>
-              <p class="projects-subtitle">Веб-сайт</p></a
-            >
+              <div class="projects-card-content">
+                <h2 class="projects-title">Технокряк</h2>
+                <p class="projects-subtitle">Веб-сайт</p>
+              </div>
+            </a>
           </li>
           <li class="list projects-item">
             <a href="/" class="link">
@@ -72,8 +78,10 @@
                 alt="два баскетболиста играют в баскетбол"
                 width="370"
               />
-              <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
-              <p class="projects-subtitle">Дизайн</p></a
+              <div class="projects-card-content">
+                <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
+                <p class="projects-subtitle">Дизайн</p>
+              </div></a
             >
           </li>
           <li class="list projects-item">
@@ -83,8 +91,10 @@
                 alt="логотип рыбного ресторана"
                 width="370"
               />
-              <h2 class="projects-title">Ресторан Seafood</h2>
-              <p class="projects-subtitle">Приложение</p></a
+              <div class="projects-card-content">
+                <h2 class="projects-title">Ресторан Seafood</h2>
+                <p class="projects-subtitle">Приложение</p>
+              </div></a
             >
           </li>
           <li class="list projects-item">
@@ -94,43 +104,55 @@
                 alt="полноразмерные наушники"
                 width="370"
               />
-              <h2 class="projects-title">Проект Prime</h2>
-              <p class="projects-subtitle">Маркетинг</p></a
+              <div class="projects-card-content">
+                <h2 class="projects-title">Проект Prime</h2>
+                <p class="projects-subtitle">Маркетинг</p>
+              </div></a
             >
           </li>
           <li class="list projects-item">
             <a href="/" class="link"
               ><img src="./images/projects/project-boxes.jpg" alt="две коробки" width="370" />
-              <h2 class="projects-title">Проект Boxes</h2>
-              <p class="projects-subtitle">Приложение</p></a
+              <div class="projects-card-content">
+                <h2 class="projects-title">Проект Boxes</h2>
+                <p class="projects-subtitle">Приложение</p>
+              </div></a
             >
           </li>
           <li class="list projects-item">
             <a href="/" class="link"
               ><img src="./images/projects/inspiration.jpg" alt="монитор" width="370" />
-              <h2 class="projects-title">Inspiration has no Borders</h2>
-              <p class="projects-subtitle">Веб-сайт</p></a
+              <div class="projects-card-content">
+                <h2 class="projects-title">Inspiration has no Borders</h2>
+                <p class="projects-subtitle">Веб-сайт</p>
+              </div></a
             >
           </li>
           <li class="list projects-item">
             <a href="/" class="link"
               ><img src="./images/projects/limited-edition.jpg" alt="открытый журнал" width="370" />
-              <h2 class="projects-title">Издание Limited Edition</h2>
-              <p class="projects-subtitle">Дизайн</p></a
+              <div class="projects-card-content">
+                <h2 class="projects-title">Издание Limited Edition</h2>
+                <p class="projects-subtitle">Дизайн</p>
+              </div></a
             >
           </li>
           <li class="list projects-item">
             <a href="/" class="link"
               ><img src="./images/projects/project-LAB.jpg" alt="ярлык" width="370" />
-              <h2 class="projects-title">Проект LAB</h2>
-              <p class="projects-subtitle">Маркетинг</p></a
+              <div class="projects-card-content">
+                <h2 class="projects-title">Проект LAB</h2>
+                <p class="projects-subtitle">Маркетинг</p>
+              </div></a
             >
           </li>
           <li class="list projects-item">
             <a href="/" class="link"
               ><img src="./images/projects/growing-business.jpg" alt="ноутбук" width="370" />
-              <h2 class="projects-title">Growing Business</h2>
-              <p class="projects-subtitle">Приложение</p></a
+              <div class="projects-card-content">
+                <h2 class="projects-title">Growing Business</h2>
+                <p class="projects-subtitle">Приложение</p>
+              </div></a
             >
           </li>
         </ul>
@@ -139,18 +161,22 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <a href="/" class="link footer-logo"><span class="accent-logo">Web</span>Studio</a>
-      <ul>
-        <li class="list">
-          <a href="https://goo.gl/maps/wVUK6R6HQRuX6YYK6" class="link footer-address"
-            >г. Киев, пр-т Леси Украинки, 26</a
-          >
-        </li>
-        <li class="list">
-          <a href="mailto:info@example.com" class="link address">info@example.com</a>
-        </li>
-        <li class="list"><a href="tel:+380991111111" class="link address">+38 099 111 11 11</a></li>
-      </ul>
+      <div class="container footer-container">
+        <a href="/" class="link footer-logo"><span class="accent-logo">Web</span>Studio</a>
+        <ul class="list footer-list">
+          <li class="footer-item">
+            <a href="https://goo.gl/maps/wVUK6R6HQRuX6YYK6" class="link footer-address"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="mailto:info@example.com" class="link address">info@example.com</a>
+          </li>
+          <li class="footer-item">
+            <a href="tel:+380991111111" class="link address">+38 099 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
